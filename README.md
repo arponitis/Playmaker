@@ -27,13 +27,14 @@ This project has been designed with a very simple concept in mind, to detect the
 Step 1: Run the main.py to get images for training
 Step 2: Label images using the LabelImg ( Link: tzutalin/labelImg )
 Step 3: Change the dataset.yml file to the following in ‘Yolov5’ directory:
- # Trainset classes:
+
+Trainset classes:
 
 path: E:\www\Pet projects\PlayMaker\data # dataset root dir
 train: images # train images (relative to 'path') 128 images
 val: images # val images (relative to 'path') 128 images
 
- # Classes
+Classes
 nc: 18  # number of classes
 names: [ 
 'dog','person','cat','tv','car','meatballs','marinara sauce','tomato soup','chicken noodle soup','french onion soup','chicken breast','ribs','pulled pork','hamburger','cavity','pause','play','stop' ]  # class names
