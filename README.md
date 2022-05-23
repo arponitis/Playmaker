@@ -5,7 +5,7 @@ A gesture based music control system that can be controlled using hand gesture.
 # ABSTRACT
 Gesture control, itself being a state-of-the-art technology, has immense uses and provides a more intuitive, natural and flexible experience, when it comes to controlling and interacting with technologies using hand gestures. High processing power to compute multi-layered deep neural networks and high resolution cameras are the main obstacles for these projects to be marketed. With a view to solving this problem, this project has been introduced, which uses YOLOv5 (a single regression based neural network) to detect hand gestures from live feed. Prediction and confidence in the results shows, without even no additional GPUs and built-in webcam, the model proposed in this project shows remarkable outcomes. Further development, awaits great result and has a prosperous future in the tech market.
 
-#BACKGROUND AND OBJECTIVES
+# BACKGROUND AND OBJECTIVES
 There are a number of implementations of gesture control based technology, including the most remarkable one that was deployed in the market by Microsoft, named Project Gesture. But unfortunately, the innovation was a flop, as it required high computing power and processing unit, along with high resolution depth cameras. That’s where project Playmaker comes in, creating a difference, with an immensely lightweight model, that even being initially trained with a ‘tiny-yolo’ weight level, provided near accurate outcomes.
 This project has been designed with a very simple concept in mind, to detect the hand gestures from a live web-feed and to use them to control a built-in audio player. 
 
