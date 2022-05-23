@@ -9,7 +9,7 @@ Gesture control, itself being a state-of-the-art technology, has immense uses an
 There are a number of implementations of gesture control based technology, including the most remarkable one that was deployed in the market by Microsoft, named Project Gesture. But unfortunately, the innovation was a flop, as it required high computing power and processing unit, along with high resolution depth cameras. That’s where project Playmaker comes in, creating a difference, with an immensely lightweight model, that even being initially trained with a ‘tiny-yolo’ weight level, provided near accurate outcomes.
 This project has been designed with a very simple concept in mind, to detect the hand gestures from a live web-feed and to use them to control a built-in audio player. 
 
-# Steps 1: Collecting Images and Creating Dataset
+# Step 1: Collecting Images and Creating Dataset
 1.	For this process, the OpenCV library has been to collect images from a live feed (OpenCV.VideoCapture)
 2.	Later on, these images have been uniquely named and stored for labeling.
 3.	In this project, the LabelImg [3] module has been to label images into classes.
