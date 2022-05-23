@@ -22,3 +22,25 @@ This project has been designed with a very simple concept in mind, to detect the
 1.	The custom model was then again loaded by Pytorch and implemented on the frames of a live feed from OpenCV.
 2.	Further testing of the images shows the detection of the states as objects. 
 3.	These objects were used as the anchor to finally anchor the audio player which is actually a built-in python library ‘audioplayer’.  
+
+# Instructions to Run the Code:
+Step 1: Run the main.py to get images for training
+Step 2: Label images using the LabelImg ( Link: tzutalin/labelImg )
+Step 3: Change the dataset.yml file to the following in ‘Yolov5’ directory:
+ # Trainset classes:
+
+path: E:\www\Pet projects\PlayMaker\data # dataset root dir
+train: images # train images (relative to 'path') 128 images
+val: images # val images (relative to 'path') 128 images
+
+ # Classes
+nc: 18  # number of classes
+names: [ 
+'dog','person','cat','tv','car','meatballs','marinara sauce','tomato soup','chicken noodle soup','french onion soup','chicken breast','ribs','pulled pork','hamburger','cavity','pause','play','stop' ]  # class names
+
+
+Step 4: Change to LabelImg directory and run the following command (in terminal): 
+	pyrcc5 -o libs/resources.py resources.qrc
+Step 5: Change to Yolov5 directory and run the following command:
+	python train.py --img 320 --batch 16 --epochs 500 --data dataset.yml --weights yolov5s.pt --workers 2
+Step 6: Run the test.py file to run the custom model on a live feed and test the following.
